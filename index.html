@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <!-- Html- Hypertext Markup (Hipertexto que aceitam marcação)-->
+<head>
+    <!-- TAG para resporsável por receber configurações da Página-->
+    <meta charset="UTF-8">
+
+    <title>Casa Criativa</title>
+    <style>
+
+        /* CSS- Cascading StyleSheet */
+        body {
+            background:#e5e5e5;
+            color: #25282B;
+            text-align: center;
+        }
+
+       
+        .fat {
+            color: white;
+            background: #ff5E84;
+        }
+       
+        
+        button {
+            color: #ff5E84;
+            border: none;
+            font-weight: bold;
+            background: none;
+            
+        }
+        .hide { 
+            display: none;
+
+        }
+       
+    </style>
+</head>    
+<body>
+     
+    <img src="logo.png" alt="Imagem da logomarca">
+    <p>
+        Ficar em casa em longos períodos, não deve ser nada fácil.        
+    </p>
+    <p>
+        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário
+        para tornar esse momento interessante.
+    </p>
+    <p>
+        Comece clicando em ver ideias para ver as ideias cadastradas e contribua 
+        adcionando sua ideia.
+    </p>
+    <button>+ Adicionar Ideia   </button>
+    <button class="fat">Ver Ideias</button>
+
+    <p id="footer">Com ❤ Rocketseat</p>
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function() {
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+
+    </script>
+</body>
+</html>
