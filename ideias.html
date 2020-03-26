@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <!-- Html- Hypertext Markup (Hipertexto que aceitam marcação)-->
-<head>
-    <!-- TAG para resporsável por receber configurações da Página-->
-    <meta charset="UTF-8">
+<html lang="pt-br">
 
-    <title>Casa Criativa</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">   
-</head>    
-<body>
+    <head>
+        <meta charset="UTF-8">
+       
+        <title>Ideias Casa Criativa </title>
+    
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body id="page-ideias">
+    <div id="container">        
 
+    <header>
+        <a href="index.html">
+        <img src="logo.png" alt="Imagem da Logo">
+        </a>
+        <nav>
+            <li><a href="index.html">Início</a></li>
+            <li><a class="button"href="#" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
 
-    <div id="container">
-        <section id="intro">
-            <header>
-                <a href="index.html">
-                    <img src="logo.png" alt="Imagem da Logo">
-                    </a>
-            </header>
-            <main>
-                <p>
-                    Ficar em casa em longos períodos, não deve ser nada fácil.        
-                    </p>
-                    <p>
-                    Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário
-                    para tornar esse momento interessante.
-                    </p>
-                    <p>
-                    Comece clicando em ver ideias para ver as ideias cadastradas e contribua 
-                    adcionando sua ideia.
-                    </p>
+    <section id="title">
+        <p>Em exibição</p>
+        <h1>Ideias</h1>
 
-            </main>
-            <section id="buttons">
-                <button onclick="onOff()">+ Adicionar Ideia   </button>
-                <a href="ideias.html" class="button">Ver Ideias</a>
-
-            </section>
-        
-        
-        
-
-            <footer>Com ❤ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a></footer>
-
-        </section>
-        <section id="last-ideias">
-                
+    </section>
+    <main>
+        <section id="ideas">
             <div class="idea">
                 <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Img. curso de Programação"> 
 
@@ -92,11 +75,29 @@
                             <a href="#">Ir para a ideia</a>
                         </div>
                     </div>
-        </section>
 
+                    <div class="idea">
+                        <img src="https://image.flaticon.com/icons/svg/2729/2729032.svg" alt="Img. karaoke"> 
+        
+                        <div class="content">
+                            <h3>karaokê</h3>
+                            <p>Diversão em Família</p>
+                            <div class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint amet qui officia quam ad tenetur, nobis totam dignissimos fugiat odit magnam recusandae dolores. Non dolore dicta repudiandae neque quisquam impedit!
+        
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+
+                    
+
+        </section>
+    </main>
+    <footer>Com ❤ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
     </div>
 
-    <!--Modal-->
     <div id="modal">
         <div class="content">
             <h1>Nova Ideia</h1>
