@@ -7,12 +7,12 @@ function onOff() {
     
     document
         .querySelector("body")
-        .classList()
+        .classList
         .toggle("hideScroll")
 
     document
         .querySelector("#modal")
-        .classList()
+        .classList
         .toggle("addScroll")
 
 }
